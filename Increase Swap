@@ -1,0 +1,12 @@
+# First, disable swap
+sudo dphys-swapfile swapoff
+# Edit swap file
+sudo nano /etc/dphys-swapfile
+# Modify this section to desired value in mb
+CONF_SWAPSIZE=
+# Save and use this command
+sudo dphys-swapfile setup
+# Enable swap
+sudo dphys-swapfile swapon
+# Reboot device
+sudo reboot
